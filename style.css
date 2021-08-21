@@ -63,7 +63,7 @@
     transition: max-height 0.3s;
     max-height: 0;
   }
-  .menu-item__sub a {
+  .menu-item__sub p {
     display: block;
     padding: 1rem 1.6rem;
     color: white;
