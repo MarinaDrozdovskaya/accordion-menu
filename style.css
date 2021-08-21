@@ -71,7 +71,7 @@
     position: relative;
     border-bottom: 1px solid var(--light-grey);
   }
-  .menu-item__sub a::before {
+  .menu-item__sub p::before {
     content: '';
     position: absolute;
     left: 0;
@@ -83,7 +83,7 @@
     transition: 0.3s;
     opacity: 0;
   }
-  .menu-item__sub a:hover::before {
+  .menu-item__sub p:hover::before {
     opacity: 1;
     transform: translatex(0);
   }
