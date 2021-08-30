@@ -61,8 +61,10 @@
     background: var(--grey);
     overflow: hidden;
     transition: max-height 0.3s;
-    max-height: 0;
+    max-height: 10em;
+    display: none;
   }
+
   .menu-item__sub p {
     display: block;
     padding: 1rem 1.6rem;
@@ -71,6 +73,7 @@
     position: relative;
     border-bottom: 1px solid var(--light-grey);
   }
+
   .menu-item__sub p::before {
     content: '';
     position: absolute;
@@ -83,11 +86,12 @@
     transition: 0.3s;
     opacity: 0;
   }
+  
   .menu-item__sub p:hover::before {
     opacity: 1;
     transform: translatex(0);
   }
   
-  .menu-item:target .menu-item__sub {
-    max-height: 10em;
+ .menu-item__sub.opened {
+    display: block;
   }
