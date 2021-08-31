@@ -14,11 +14,11 @@
   }
   
   body {
+    padding-top: 2rem;
+    background: var(--background);
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: var(--background);
+    flex-direction: column;
   }
   
   .menu {
@@ -26,6 +26,7 @@
     border-radius: 0.2rem;
     overflow: hidden;
   }
+
   .menu a {
     text-decoration: none;
   }
@@ -34,6 +35,7 @@
     list-style: none;
     border-top: 1px solid var(--dark-blue);
     overflow: hidden;
+    position: relative;
   }
   
   .btn {
@@ -43,6 +45,7 @@
     color: white;
     position: relative;
   }
+
   .btn::before {
     content: '';
     position: absolute;
@@ -61,8 +64,7 @@
     background: var(--grey);
     overflow: hidden;
     transition: max-height 0.3s;
-    max-height: 10em;
-    display: none;
+    max-height: 0;
   }
 
   .menu-item__sub p {
@@ -93,5 +95,5 @@
   }
   
  .menu-item__sub.opened {
-    display: block;
+    max-height: 10em;
   }
